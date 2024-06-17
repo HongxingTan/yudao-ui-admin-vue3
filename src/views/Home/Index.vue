@@ -10,7 +10,7 @@
               </el-avatar>
               <div>
                 <div class="text-20px">
-                  {{ t('workplace.welcome') }} {{ username }} {{ t('workplace.happyDay') }}
+                 
                 </div>
                 <div class="mt-10px text-14px text-gray-500">
                   {{ t('workplace.toady') }}，20℃ - 32℃！
@@ -21,33 +21,18 @@
           <el-col :xl="12" :lg="12" :md="12" :sm="24" :xs="24">
             <div class="h-70px flex items-center justify-end lt-sm:mt-10px">
               <div class="px-8px text-right">
-                <div class="mb-16px text-14px text-gray-400">{{ t('workplace.project') }}</div>
-                <CountTo
-                  class="text-20px"
-                  :start-val="0"
-                  :end-val="totalSate.project"
-                  :duration="2600"
-                />
+               
+                
               </div>
               <el-divider direction="vertical" />
               <div class="px-8px text-right">
-                <div class="mb-16px text-14px text-gray-400">{{ t('workplace.toDo') }}</div>
-                <CountTo
-                  class="text-20px"
-                  :start-val="0"
-                  :end-val="totalSate.todo"
-                  :duration="2600"
-                />
+                 
+                
               </div>
               <el-divider direction="vertical" border-style="dashed" />
               <div class="px-8px text-right">
-                <div class="mb-16px text-14px text-gray-400">{{ t('workplace.access') }}</div>
-                <CountTo
-                  class="text-20px"
-                  :start-val="0"
-                  :end-val="totalSate.access"
-                  :duration="2600"
-                />
+                
+                
               </div>
             </div>
           </el-col>
@@ -59,19 +44,7 @@
   <el-row class="mt-8px" :gutter="8" justify="space-between">
     <el-col :xl="16" :lg="16" :md="24" :sm="24" :xs="24" class="mb-8px">
       <el-card shadow="never">
-        <template #header>
-          <div class="h-3 flex justify-between">
-            <span>{{ t('workplace.project') }}</span>
-            <el-link
-              type="primary"
-              :underline="false"
-              href="https://github.com/yudaocode"
-              target="_blank"
-            >
-              {{ t('action.more') }}
-            </el-link>
-          </div>
-        </template>
+ 
         <el-skeleton :loading="loading" animated>
           <el-row>
             <el-col
@@ -84,14 +57,11 @@
               :xs="24"
             >
               <el-card shadow="hover" class="mr-5px mt-5px">
-                <div class="flex items-center">
-                  <Icon :icon="item.icon" :size="25" class="mr-8px" />
-                  <span class="text-16px">{{ item.name }}</span>
-                </div>
-                <div class="mt-12px text-9px text-gray-400">{{ t(item.message) }}</div>
+       
+               
                 <div class="mt-12px flex justify-between text-12px text-gray-400">
-                  <span>{{ item.personal }}</span>
-                  <span>{{ formatTime(item.time, 'yyyy-MM-dd') }}</span>
+                
+                  
                 </div>
               </el-card>
             </el-col>
